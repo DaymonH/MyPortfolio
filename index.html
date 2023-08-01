@@ -2,125 +2,185 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inicial-scale:1.0">
-        <title>Daymon Hansen Online Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daymon Portfolio Website</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" 
-        crossorigin="anonymous" /> 
-        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
         <!-- Update these with your own fonts -->
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
         
+        <link rel="stylesheet" href="css/style.css">
+
     </head>
     <body>
         <header>
-            <div>
-                <img>
-
+            <div class="logo">
+                <img src="img/devjane.png" alt="">
             </div>
-            <button class="nav-toggle">
+            <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="list__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="list__item"><a href="#" class="nav__link">Current Endeavors</a></li>
-                    <li class="list__item"><a href="#" class="nav__link">About Me</a></li>
-                    <li class="list__item"><a href="#" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
                 </ul>
             </nav>
         </header>
-        <!--Introduction-->
+        
+        <!-- Introduction -->
         <section class="intro" id="home">
-            <h1 class="section__title section__title--intro"> Hey I am <strong>Daymon Hansen</strong></h1>
-            <p class="section__subtitle section__subtitle--intro">Data Scientist in the making and front end dev</p>
-            <img src="Pics/LinkedInPicDone.jpeg" alt="picture of Daymon">
+            <h1 class="section__title section__title--intro">
+                Hey, I am <strong>Daymon Hansen</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Computer Science Grad</p>
+            <img src="Pics/LinkedInPicDoneTrimmed.jpeg" alt="a picture of Jane Smith smiling" class="intro__img">
         </section>
-
-        <!--My services-->
+        
+        
+        <!-- My services -->
         <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I have done and do</h2>
+            <h2 class="section__title section__title--services">What I do</h2>
             <div class="services">
+                <div class="service">
+                    <h3>Data Scientist/Analyst</h3>
+                    <p>Experience with dataset creation/cleaning/analizing as well as deep learning and Convolutional
+                        Nueral Networks. Completed all machince learning courses on kaggle with many projects completed
+                        on my own account with kaggle datasets.
+                    </p>
 
+                </div> <!-- / service -->
                 <div class="service">
-                    <h3>Website Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quisquam vitae eligendi.
-                        Temporibus vero eveniet sit architecto ex culpa quae minus dolorum soluta laudantium!
-                         Sapiente nihil accusantium voluptas non id!</p>
-                </div> <!--/ Service-->
-                <div class="service">
-                    <h3>Data Analytics</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quisquam vitae eligendi.
-                        Temporibus vero eveniet sit architecto ex culpa quae minus dolorum soluta laudantium!
-                         Sapiente nihil accusantium voluptas non id!</p>
-                </div> <!--/ Service-->
+                    <h3>Web Dev</h3>
+                    <p>Experience in frond end development with some back end experience. Completed a internship at Rhone Appearal while in school.
+                        Two classes taken on web development as a part of my CS track. A few side/personal projects created for my own learning. 
+                    </p>
+
+                </div> <!-- / service -->
                 <div class="service">
                     <h3>Mobile Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quisquam vitae eligendi.
-                         Temporibus vero eveniet sit architecto ex culpa quae minus dolorum soluta laudantium!
-                          Sapiente nihil accusantium voluptas non id!</p>
-                </div> <!--/ Service-->
-
-            </div> <!--/ Services-->
+                    <p>Self taught in mobile development due to a great interest in the field. Working on an app solo that
+                        will serve as a full marketplace for accessories for sellers to find buyers. I have chose to make it a cross platform app using react native
+                        to be able to further practice my react and CSS/Javascript skills. Have had to implement 
+                        User Authentication, Database managment, and site perfomance monotoring and managment. 
+                    </p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
             <a href="#work" class="btn">My Work</a>
         </section>
-
-        <!-- About Me-->
-        <section  class="about-me" id="about">
-            <h2 class="section__title section__title--about">Who am I?</h2>
-            <p class="section__subtitle section__subtitle--about">Aspiring DataScientist with interests in web development and mobile development</p>
-
-            <div class="about-me--body">
-                <p></p>
-                <p></p>
-            </div>
-
-            <img src="Pics/MeAndRedPlane.jpeg">
-
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Utah Based Developer</p>
+           
+           <div class="about-me__body">
+               <p>Origanlly planning to do aerospace engineering I took one class of CS my freshman year, fell in love and switched majors
+                the very next semester. 
+                 I constantly find my self teaching myself new skills and languages outside of school/work. What facinates me about 
+                 the field of software development is the shear number of uses and limitless options out there. 
+               </p>
+               <p>To pay for my schooling and provide for my wife and I, I have a number of years doing door to door sales. I hope 
+                to be able to use my skills learned there in my career as a software engineer. I feel there are many aspects that carry over
+                such as being a great communicator and being able to deal with people very well. This includes collaboraing with team members
+                in an effective manor as well and handling conflict and managing a team. 
+               </p>
+           </div>
+           
+           <img src="Pics/MeAndRedPlane.jpeg" alt="Jane leaning against a bus" class="about-me__img">
         </section>
-
-        <!-- My Work-->
+        
+        <!-- My Work -->
         <section class="my-work" id="work">
-            <h2 class="section__title">My work</h2>
-            <p class="section__subtitle"></p>
-
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
             <div class="portfolio">
-                <!--Portfolio Item 1-->
+                <!-- Portfolio item 01 -->
                 <a href="#" class="portfolio__item">
-                    <img src="img" alt="TODO" class="portfolio__img">
+                    <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
                 </a>
-                <!--Portfolio Item 2-->
+                
+                <!-- Portfolio item 02 -->
                 <a href="#" class="portfolio__item">
-                    <img src="img" alt="TODO" class="portfolio__img">
+                    <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
                 </a>
-                <!--Portfolio Item 3-->
+                
+                <!-- Portfolio item 03 -->
                 <a href="#" class="portfolio__item">
-                    <img src="img" alt="TODO" class="portfolio__img">
+                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
                 </a>
-                <!--Portfolio Item 1-->
+                
+                <!-- Portfolio item 04 -->
                 <a href="#" class="portfolio__item">
-                    <img src="img" alt="TODO" class="portfolio__img">
+                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 07 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 08 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 09 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 0 0-->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
                 </a>
             </div>
         </section>
-
-        <!--Footer-->
-        <footer>
-            <a href="mailto:daymonhansen@gmail.com" class="footer-link">daymonhansen@gmail.com</a>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:hello@jane.dev" class="footer__link">daymonhansen@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/daymon-hansen-351731238/">
-                        A
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/DaymonH">
-                        B
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
                     </a>
                 </li>
             </ul>
         </footer>
+        
     </body>
-    
 </html>

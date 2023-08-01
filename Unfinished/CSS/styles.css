@@ -3,7 +3,6 @@
 *::after{
     box-sizing: border-box;
 }
-
 :root{
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
@@ -28,9 +27,8 @@
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
-    
 }
-
+/*General Styles*/
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -80,4 +78,27 @@ h3 {
     font-family: var(--ff-secondary);
 }
 
-.
+
+
+
+/* Header */
+nav {display: none;}
+/* Intro Section */
+
+.intro {
+    position: relative;
+
+}
+
+body {
+    background-color: lightgray;
+}
+
+p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.service {
+    padding-left: 1rem;
+}
