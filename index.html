@@ -1,186 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Daymon Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <!-- Update these with your own fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daymon Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
 
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="img/devjane.png" alt="">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hey, I am <strong>Daymon Hansen</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Computer Science Grad</p>
-            <img src="Pics/LinkedInPicDoneTrimmed.jpeg" alt="a picture of Jane Smith smiling" class="intro__img">
-        </section>
-        
-        
-        <!-- My services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Data Scientist/Analyst</h3>
-                    <p>Experience with dataset creation/cleaning/analizing as well as deep learning and Convolutional
-                        Nueral Networks. Completed all machince learning courses on kaggle with many projects completed
-                        on my own account with kaggle datasets.
-                    </p>
+    <!-- Update these with your own fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
 
-                </div> <!-- / service -->
-                <div class="service">
-                    <h3>Web Dev</h3>
-                    <p>Experience in frond end development with some back end experience. Completed a internship at Rhone Appearal while in school.
-                        Two classes taken on web development as a part of my CS track. A few side/personal projects created for my own learning. 
-                    </p>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/devjane.png" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-                </div> <!-- / service -->
-                <div class="service">
-                    <h3>Mobile Development</h3>
-                    <p>Self taught in mobile development due to a great interest in the field. Working on an app solo that
-                        will serve as a full marketplace for accessories for sellers to find buyers. I have chose to make it a cross platform app using react native
-                        to be able to further practice my react and CSS/Javascript skills. Have had to implement 
-                        User Authentication, Database managment, and site perfomance monotoring and managment. 
-                    </p>
-                </div> <!-- / service -->
-            </div> <!-- / services -->
-            
-            <a href="#work" class="btn">My Work</a>
-        </section>
-        
-        
-        <!-- About me -->
-        <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about">Utah Based Developer</p>
-           
-           <div class="about-me__body">
-               <p>Origanlly planning to do aerospace engineering I took one class of CS my freshman year, fell in love and switched majors
-                the very next semester. 
-                 I constantly find my self teaching myself new skills and languages outside of school/work. What facinates me about 
-                 the field of software development is the shear number of uses and limitless options out there. 
-               </p>
-               <p>To pay for my schooling and provide for my wife and I, I have a number of years doing door to door sales. I hope 
-                to be able to use my skills learned there in my career as a software engineer. I feel there are many aspects that carry over
-                such as being a great communicator and being able to deal with people very well. This includes collaboraing with team members
-                in an effective manor as well and handling conflict and managing a team. 
-               </p>
-           </div>
-           
-           <img src="Pics/MeAndRedPlane.jpeg" alt="Jane leaning against a bus" class="about-me__img">
-        </section>
-        
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-            
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 02 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 03 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 04 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 05 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 06 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 07 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 08 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 09 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 0 0-->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img">
-                </a>
-            </div>
-        </section>
-        
-        
-        <!-- Footer -->
-        <footer class="footer">
-            <!-- replace with your own email address -->
-            <a href="mailto:hello@jane.dev" class="footer__link">daymonhansen@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io">
-                        <i class="fab fa-codepen"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="http://dribbble.com">
-                        <i class="fab fa-dribbble"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-        
-    </body>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hey, I am <strong>Daymon Hansen</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Computer Science Senior
+      </p>
+      <img
+        src="Pics/LinkedInPicDoneTrimmed.jpeg"
+        alt="a picture of Jane Smith smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Machine Learning and AI</h3>
+          <p>
+            I specialize in machine learning and artificial intelligence. I've
+            developed predictive models for various applications, including
+            recommendation systems and sentiment analysis. I have hands-on
+            experience with deep learning frameworks like TensorFlow and
+            SkiKit-Learn, and I've successfully implemented neural networks for
+            image classification tasks. My passion lies in harnessing the power
+            of machine learning to solve real-world problems.
+          </p>
+        </div>
+        <!-- / service -->
+        <div class="service">
+          <h3>Data Analysis and Visualization</h3>
+          <p>
+            My expertise extends to data analysis and visualization, with a
+            strong foundation in statistical analysis and data manipulation. I
+            have a knack for transforming raw data into meaningful insights
+            through exploratory data analysis and effective data visualization
+            techniques. I'm proficient in Python, SQL, Power BI, Tableau, and I
+            leverage libraries like Pandas, Matplotlib, and Seaborn to create
+            informative data visualizations that drive decision-making.
+          </p>
+        </div>
+        <!-- / service -->
+        <div class="service">
+          <h3>Data-driven Solutions</h3>
+          <p>
+            I thrive on creating data-driven solutions to complex problems.
+            Whether it's building robust fraud detection algorithms or
+            constructing data pipelines for real-time data processing, I'm adept
+            at designing scalable and efficient solutions. I understand the
+            importance of collaboration and communication, ensuring that my
+            data-driven insights are accessible and actionable for stakeholders.
+            My commitment to continuous learning keeps me at the forefront of
+            emerging trends in data science and technology.
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Utah Based Developer
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Origanlly planning to do aerospace engineering I took one class of CS
+          my freshman year, fell in love and switched majors the very next
+          semester. I constantly find my self teaching myself new skills and
+          languages outside of school/work. What facinates me about the field of
+          software development is the shear number of uses and limitless options
+          out there.
+        </p>
+        <p>
+          To pay for my schooling and provide for my wife and I, I have a number
+          of years doing door to door sales. I hope to be able to use my skills
+          learned there in my career as a software engineer. I feel there are
+          many aspects that carry over such as being a great communicator and
+          being able to deal with people very well. This includes collaboraing
+          with team members in an effective manor as well and handling conflict
+          and managing a team.
+        </p>
+      </div>
+
+      <img
+        src="Pics/MeAndRedPlane.jpeg"
+        alt="Jane leaning against a bus"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 04 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 05 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 06 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 07 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 08 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 09 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 0 0-->
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img src="Pics/portfolio-01.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- replace with your own email address -->
+      <a href="mailto:hello@jane.dev" class="footer__link"
+        >daymonhansen@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://codepen.io">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="http://dribbble.com">
+            <i class="fab fa-dribbble"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
