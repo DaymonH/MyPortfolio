@@ -352,6 +352,15 @@ header {
   opacity: 0.5;
 }
 
+/* Resume Section */
+/* Resume Preview Section */
+.resume-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* footer */
 
 .footer {
