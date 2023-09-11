@@ -174,11 +174,9 @@ header {
   margin-right: 20px; /* Adjust the spacing between links as needed */
   margin: 25px;
 }
-
 .nav__link:last-child {
   margin-right: 0; /* Remove margin for the last link */
 }
-
 .nav__link:hover {
   color: var(--clr-accent);
   text-decoration: underline solid var(--clr-accent);
@@ -187,19 +185,15 @@ header {
 }
 
 /*  Intro section  */
-
 .intro {
   position: relative;
 }
-
 .intro__img {
   box-shadow: var(--bs);
 }
-
 .section__subtitle--intro {
   display: inline-block;
 }
-
 @media (min-width: 600px) {
   .intro {
     display: grid;
@@ -211,14 +205,12 @@ header {
       "img subtitle";
     grid-template-columns: min-content max-content;
   }
-
   .intro__img {
     grid-area: img;
     min-width: 250px;
     position: relative;
     z-index: 2;
   }
-
   .section__subtitle--intro {
     align-self: start;
     grid-column: -1 / 1;
@@ -231,7 +223,6 @@ header {
 }
 
 /*  My services section  */
-
 .my-services {
   background-color: var(--clr-dark);
   background-image: url(../img/services-bg.jpg);
@@ -239,13 +230,12 @@ header {
   /* background-blend-mode: multiply; */
   color: var(--clr-light);
   text-align: center;
+  padding-bottom: 0;
 }
-
 .section__title--services {
   color: var(--clr-accent);
   position: relative;
 }
-
 .section__title--services::after {
   content: "";
   display: block;
@@ -255,16 +245,13 @@ header {
   background: var(--clr-light);
   opacity: 0.25;
 }
-
 .services {
-  margin-bottom: 4em;
+  margin-bottom: 0em;
 }
-
 .service {
   max-width: 500px;
   margin: 0 auto;
 }
-
 @media (min-width: 800px) {
   .services {
     display: flex;
@@ -272,21 +259,17 @@ header {
     margin-left: auto;
     margin-right: auto;
   }
-
   .service + .service {
     margin-left: 2em;
   }
 }
-
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
 }
-
 .about-me__img {
   box-shadow: var(--bs);
 }
-
 @media (min-width: 600px) {
   .about-me {
     display: grid;
@@ -297,11 +280,9 @@ header {
       "text img";
     grid-column-gap: 2em;
   }
-
   .section__title--about {
     grid-area: title;
   }
-
   .section__subtitle--about {
     grid-column: 1 / -1;
     grid-row: 2;
@@ -311,14 +292,46 @@ header {
     padding-left: 1em;
     padding-right: calc(200px + 4em);
   }
-
   .about-me__img {
     grid-area: img;
     position: relative;
     z-index: 2;
   }
 }
-
+/* My Skills */
+.skills {
+  width: 100%;
+  padding-top: 0;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  display: flex;
+  flex-direction: column;
+}
+.section__title--skills {
+  text-align: center;
+  width: 100%;
+  color: var(--clr-accent);
+  margin-bottom: 0em;
+  padding-bottom: 0;
+}
+.section__title--skills::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
+  opacity: 0.25;
+}
+.skills__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.skills__list {
+  margin-top: 0;
+  padding-top: 0;
+}
 /* My Work */
 
 .my-work {
@@ -326,26 +339,21 @@ header {
   color: var(--clr-light);
   text-align: center;
 }
-
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-
 .portfolio__item {
   background: var(--clr-accent);
   overflow: hidden;
 }
-
 .portfolio__img {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
-
 .portfolio__item:focus {
   position: relative;
   z-index: 2;
 }
-
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
@@ -353,7 +361,6 @@ header {
 }
 
 /* Resume Section */
-/* Resume Preview Section */
 .resume-preview {
   display: flex;
   flex-direction: column;
