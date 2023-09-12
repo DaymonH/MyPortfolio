@@ -311,6 +311,7 @@ header {
   text-align: center;
   width: 100%;
   color: var(--clr-accent);
+  margin-top: 1em;
   margin-bottom: 0em;
   padding-bottom: 0;
 }
@@ -423,10 +424,26 @@ header {
   padding: 0 2em 2em;
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-item-individual p {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+.portfolio-item-individual img {
+  width: 50%; /* Make the image fill the container width */
+  height: auto; /* Make the image fill the container height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  margin-bottom: 1em;
+  padding: 1%;
+}
+.portfolio-item-individual div {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-item-individual a {
+  align-self: center;
 }

@@ -50,21 +50,62 @@
       <p class="section__subtitle section__subtitle--intro">
         Damage Detection on Wind Turbine Blades
       </p>
-      <img src="Pics/ProjectPhotos/Faulty_2.jpg" alt="" class="intro__img" />
+      <img
+        src="Pics/ProjectCoverPhotos/portfolio-01.jpg"
+        alt=""
+        class="intro__img"
+      />
     </section>
 
     <div class="portfolio-item-individual">
-      <p>As part of my work I helped create</p>
-      <img src="Pics/ProjectPhotos/Faulty_2.jpg" alt="" />
+      <div>
+        <img src="Pics/ProjectPhotos/Faulty_2.jpg" alt="" />
+        <p>
+          The dataset used here I helped make at UVU using thermal images taken
+          on a small wind turbine replica about 7 feet tall. The Dataset
+          contains 1000 imgages split into 800 training, 100 Validation and 200
+          test. There is an even split of 500 faulty blade images and 500
+          healthy blade images.
+        </p>
+      </div>
+
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet
-        tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?
+        I used a custom model built in Keras with a Tensorflow backend. To
+        prevent overfitting because of the small dataset image augmentation was
+        used as well as dropout layers regularizers in the convolutional layers.
+        Using this method I was able to acheive 85% test accuracy without
+        overfitting. I multiple methods to find the best hyperperameters
+        including manual tuning, random search and grid search. Perameters tuned
+        include learning rate, batch size, number of epochs, dropout rate,
+        number of filters, filter size, and number of dense layers.
       </p>
+      <div class="resultImages">
+        <img src="Pics/ProjectPhotos/acc-loss-CNN.png" alt="" />
+        <img src="Pics/ProjectPhotos/confMatrix.png" alt="" />
+      </div>
       <p>
-        Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae
-        eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius
-        earum?
+        I also tried some transfer learning using other architectures and
+        acheived much higher test accuracys. Xception was the superior
+        architecture acheiving 98.5% with no overfitting. The convolutional
+        weights were taken from 'Imagnet'. But the dense layers were generated
+        at random to be trainded on the dataset.
       </p>
+
+      <div>
+        <h4>Tools used</h4>
+        <div>
+          <ul>
+            <li>Python</li>
+            <li>Keras/TensorFlow</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>SkiKit-Learn</li>
+            <li>Numpy</li>
+          </ul>
+        </div>
+      </div>
+      <a href="github.com" class="btn" target="_blank">See code in github</a>
     </div>
 
     <!-- Footer -->
@@ -107,3 +148,4 @@
     <script src="js/index.js"></script>
   </body>
 </html>
+<style></style>
