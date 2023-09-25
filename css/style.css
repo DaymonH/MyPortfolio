@@ -420,6 +420,11 @@ header {
 
 /* Individual portfolio item styles */
 
+.portfolio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .portfolio-item-individual {
   padding: 0 2em 2em;
   max-width: 1000px;
