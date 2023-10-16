@@ -76,7 +76,7 @@
           model expect for the defensive team beause it has stats that are so
           different then individual players. I also needed a way to show the
           model that certian player had 0 points because they were injured so I
-          used a binary column to show if they were injured or not. I used a
+          added a binary column to show if they were injured or not.
         </p>
       </div>
 
@@ -88,7 +88,19 @@
           alt="datasource"
         />
       </div>
-      <p></p>
+      <div class="resultImages">
+        <img
+          style="width: 100%"
+          src="\Pics\ProjectPhotos\FantasyPredictor\dataframe.PNG"
+          alt="datasource"
+        />
+      </div>
+      <p>
+        For my model I used xgBoost as used Mean Average Precision as the loss
+        metric. After only 5 weeks of training data this season, I was able to
+        acheive a MAP score of 5.8, which is great considering the volatility of
+        football stats and games.
+      </p>
 
       <div>
         <h4>Tools used</h4>
@@ -106,7 +118,7 @@
         </div>
       </div>
       <a
-        href="https://github.com/DaymonH/CarPricePredictor"
+        href="https://github.com/DaymonH/FantasyFootballRNN.git"
         class="btn"
         target="_blank"
         >See code in github</a
