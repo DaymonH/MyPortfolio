@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const playerName = document.getElementById("playerName").value;
       const trimmedPlayerName = playerName.trim(); // Remove leading and trailing spaces
       const playerNameWithPlus = trimmedPlayerName.replace(/ /g, "+"); // Replace spaces with '+'
-
+      console.log(playerNameWithPlus);
       const opponent = document.getElementById("opponent").value;
       const week = document.getElementById("week").value;
 
