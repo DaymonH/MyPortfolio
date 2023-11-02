@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const week = document.getElementById("week").value;
 
       // Construct the URL with query parameters
-      const apiUrl = `https://fantasy-api-daymonh.replit.app/?playerName=${playerNameWithPlus}&opponent=${opponent}&week=${week}`;
+      const apiUrl = `https://fantasy-api-daymonh.replit.app/?NAME=${playerNameWithPlus}&OPP=${opponent}&WEEK=${week}&@HOME=True`;
 
       // Make a GET request to your API
       fetch(apiUrl)
