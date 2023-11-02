@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((response) => response.json())
         .then((data) => {
           document.getElementById("result").style.display = "block"; // Show the result element
-          document.getElementById("result").innerHTML = `Predicted Points ${
-            JSON.stringify(data)[2]
-          }`;
+          document.getElementById(
+            "result"
+          ).innerHTML = `Predicted Points ${JSON.stringify(data)}`;
         })
         .catch((error) => {
           console.error("Error:", error);
