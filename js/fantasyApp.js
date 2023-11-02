@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(playerNameWithPlus);
       const opponent = document.getElementById("opponent").value;
       const week = document.getElementById("week").value;
-
+      const atHomeDropdown = document.getElementById("atHome").value;
       // Construct the URL with query parameters
       const apiUrl = `https://fantasy-api-daymonh.replit.app/?NAME=${playerNameWithPlus}&OPP=${opponent}&WEEK=${week}&@HOME=True`;
 
