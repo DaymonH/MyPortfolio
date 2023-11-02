@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fetch(apiUrl)
         .then((response) => response.json())
         .then((data) => {
+          document.getElementById("result").style.display = "block"; // Show the result element
           document.getElementById(
             "result"
           ).innerHTML = `API Response: ${JSON.stringify(data)}`;
