@@ -13,6 +13,10 @@ h1 {
 
 /* Style the form container */
 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   max-width: 400px;
   margin: 0 auto;
   background-color: #fff;
