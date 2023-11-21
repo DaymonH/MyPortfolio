@@ -64,23 +64,6 @@
         alt=""
         style="width: 100%; height: auto"
       />
-
-      <div>
-        <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I made this Dataset by
-          creating a script in python that uses Selenium to scrape Espn.com for
-          all the data for each player in the NFL. Data cleaning and preparation
-          was performed to drop the players who have yet to play in a game.
-          Feature engineering was used to split singles feature columns into
-          multiple. Most players information was combined to train the same
-          model expect for the defensive team beause it has stats that are so
-          different then individual players. I also needed a way to show the
-          model that certian player had 0 points because they were injured so I
-          added a binary column to show if they were injured or not.
-        </p>
-      </div>
-
-      <p></p>
       <div class="resultImages">
         <img
           style="width: 100%"
@@ -88,6 +71,38 @@
           alt="datasource"
         />
       </div>
+      <div>
+        <h4>Data Collection/Data Ingestion</h4>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I created this Dataset by
+          creating various automated scripts in python, using Selenium, to
+          scrape Espn and various other sites for all the data/stats for each
+          player in the NFL each week. This data was loaded into the form of
+          pandas dataframes and .csv files.
+        </p>
+      </div>
+      <div>
+        <h4>Data preprosessing</h4>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rigorous data cleaning and
+          preparation was performed to drop the players who no longer play and
+          have incomplete data. Feature engineering was used to split singles
+          feature columns, that held multiple values, into separate columns.
+        </p>
+      </div>
+      <div>
+        <h4>Data storage</h4>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Data was stored in a MySQL
+          database on my local machine. Inicially I used PyMySql to connect to
+          my DB and load all the data into is respective tables such as,
+          players, teams, positions and game-stats. I also did the same using
+          SSIS to create a package that would run the python scripts and load
+          the data into the database. I then created a View that combined all
+          the tables into one table for easy access and exporing.
+        </p>
+      </div>
+
       <div class="resultImages">
         <img
           style="width: 100%"
@@ -95,11 +110,49 @@
           alt="datasource"
         />
       </div>
+      <div>
+        <h4>Data Analysis and Exploration</h4>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; With this loaded dataset I
+          performed Exploritory data analysis using various methods such as
+          pythons plotly/seaborn.
+        </p>
+      </div>
+      <div>
+        <h4>Data Presentation</h4>
+        <p>
+          After exploring the data I found found various insights usefule to
+          fantasy football enjoyers and created various dashboards using Tableau
+          and Power BI where these insights could be seen and used.
+        </p>
+      </div>
+      <div>
+        <h4>Data Sharing/Collaboration</h4>
+      </div>
+      <div>
+        <h4>Machine Learning</h4>
+        <ul>
+          <li>feature engineering</li>
+          <li>Model Creation/Finetuning</li>
+          <li>Continuous Model Training</li>
+          <li>Model Deployment</li>
+        </ul>
+        <p>
+          Most players information was combined to train the same model expect
+          for the defensive team beause it has stats that are so different then
+          individual players. I also needed a way to show the model that certian
+          player had 0 points because they were injured so I added a binary
+          column to show if they were injured or not.
+        </p>
+      </div>
+
+      <p></p>
+
       <p>
-        For my model I used xgBoost as used Mean Average Precision as the loss
+        For my model I used xgBoost and used Mean Average Precision as the loss
         metric. After only 5 weeks of training data this season, I was able to
-        acheive a MAP score of 5.8, which is great considering the volatility of
-        football stats and games.
+        acheive a MAP score of 4.56, which is great considering the volatility
+        of football stats and games.
       </p>
       <div class="resultImages">
         <img
@@ -111,14 +164,35 @@
         <h4>Tools used</h4>
         <div>
           <ul>
-            <li>Selenium</li>
-            <li>Python</li>
-            <li>Keras/TensorFlow</li>
-            <li>Pandas</li>
-            <li>Matplotlib</li>
-            <li>Seaborn</li>
-            <li>SkiKit-Learn</li>
-            <li>Numpy</li>
+            <li>
+              Python
+              <ul>
+                <li>Pandas</li>
+                <li>Seaborn</li>
+                <li>Numpy</li>
+                <li>Plotly</li>
+                <li>Matplotlib</li>
+                <li>PyMySQL</li>
+                <li>Keras/TensorFlow</li>
+                <li>SkiKit-Learn</li>
+              </ul>
+            </li>
+            <li>
+              Visualization/DashBoarding
+              <ul>
+                <li>Tableau</li>
+                <li>Power BI</li>
+              </ul>
+            </li>
+            <li>
+              SQL
+              <ul>
+                <li>MySQL/T-SQL</li>
+                <li>MySQL Workbench</li>
+                <li>SSIS - SQL Server Integration Services</li>
+                <li>SSDT - SQL Server Data Tools</li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
