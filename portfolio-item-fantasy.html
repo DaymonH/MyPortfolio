@@ -45,10 +45,10 @@
 
     <section class="intro">
       <h1 class="section__title section__title--intro">
-        <strong>Times Series/WebScraping</strong>
+        <strong>Fantasy Football Stats</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">
-        Weekly fantasy point predictor
+        Full data pipeline from data collection to model deployment
       </p>
       <img
         style="background-color: black"
@@ -77,8 +77,8 @@
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I created this Dataset by
           creating various automated scripts in python, using Selenium, to
           scrape Espn and various other sites for all the data/stats for each
-          player in the NFL each week. This data was loaded into the form of
-          pandas dataframes and .csv files.
+          player/defense in the NFL each week. This data was loaded into pandas
+          dataframes and tempararily stored as .csv files.
         </p>
       </div>
       <div>
@@ -86,8 +86,9 @@
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rigorous data cleaning and
           preparation was performed to drop the players who no longer play and
-          have incomplete data. Feature engineering was used to split singles
-          feature columns, that held multiple values, into separate columns.
+          have incomplete data by dropping rows that had certain values as 0 or
+          NaN. Feature engineering was used to split singles feature columns,
+          that held multiple values origanally in the same html element.
         </p>
       </div>
       <div>
@@ -114,8 +115,11 @@
         <h4>Data Analysis and Exploration</h4>
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; With this loaded dataset I
-          performed Exploritory data analysis using various methods such as
-          pythons plotly/seaborn.
+          performed Exploritory data analysis using various tools such as
+          pythons plotly/seaborn. I utilized visualization and statistical
+          methods to understand data patterns, relationships, and anomalies,
+          aiming to derive initial insights for subsequent analysis. Top
+          performing players and defenses were found and stat trends shown.
         </p>
       </div>
       <div>
@@ -123,12 +127,36 @@
         <p>
           After exploring the data I found found various insights usefule to
           fantasy football enjoyers and created various dashboards using Tableau
-          and Power BI where these insights could be seen and used.
+          and Power BI where these insights could be seen and used. These
+          dashboards provide uses the abilty to make informed descisions on
+          which players were most likey to sucess on a case by case senario.
+          (Linked to these can be found on the projects secion of the home page)
         </p>
       </div>
+      <a
+        href="https://public.tableau.com/app/profile/daymon.hansen1655/viz/FantasyFootball2023Wk1-6/Dashboard1"
+        class="btn"
+        style="margin-top: 2%; border-radius: 5%"
+        target="_blank"
+        >Click Here For Fantasy stat Dashboard in Tableau</a
+      >
       <div>
         <h4>Data Sharing/Collaboration</h4>
+        <p>
+          Various methods were used to shared the outcomes of this project. I
+          developed various apis to share the model predictions made by the ML
+          model. Another API using dash way purely visual to provid users a easy
+          way to explore and filter the data. I also posted my tableau
+          dashboards on tableau public for viewing.
+        </p>
       </div>
+      <a
+        href="https://fantasy-football-viz-api-daymonh.replit.app/"
+        class="btn"
+        style="margin-top: 2%; border-radius: 5%"
+        target="_blank"
+        >Click Here For Fantasy insights visualized with Dash</a
+      >
       <div>
         <h4>Machine Learning</h4>
         <ul>
@@ -142,18 +170,20 @@
           for the defensive team beause it has stats that are so different then
           individual players. I also needed a way to show the model that certian
           player had 0 points because they were injured so I added a binary
-          column to show if they were injured or not.
+          column to show if they were injured or not. For my model I used
+          xgBoost and used Mean Average Precision as the loss metric. After only
+          5 weeks of training data this season, I was able to acheive a MAP
+          score of 4.56, which is great considering the volatility of football
+          stats and games.
         </p>
       </div>
+      <a
+        href="PricePredictor.html"
+        class="btn"
+        style="margin-top: 2%; border-radius: 5%"
+        >Click Here For Model Api Predictions</a
+      >
 
-      <p></p>
-
-      <p>
-        For my model I used xgBoost and used Mean Average Precision as the loss
-        metric. After only 5 weeks of training data this season, I was able to
-        acheive a MAP score of 4.56, which is great considering the volatility
-        of football stats and games.
-      </p>
       <div class="resultImages">
         <img
           src="\Pics\ProjectPhotos\FantasyPredictor\featImportance.PNG"
