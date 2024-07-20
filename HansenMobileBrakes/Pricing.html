@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hansen Mobile Brakes - Pricing</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/CtaAndForm.css" />
+    <link rel="stylesheet" href="css/Pricing.css" />
+    <link rel="stylesheet" href="css/hansenMobileBreaks.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="Home.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="Pricing.html" class="nav__link">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CTA and Quote Form-->
+    <!-- Call-to-Action Button -->
+    <div class="cta-container">
+      <button class="cta-button" onclick="openForm()">Request a Quote</button>
+    </div>
+
+    <!-- Popup Form -->
+    <div id="popup-form" class="popup-form">
+      <div class="popup-form__content">
+        <span class="popup-form__close" onclick="closeForm()">&times;</span>
+        <h2>Request a Quote</h2>
+        <form
+          id="quote-form"
+          action="https://formspree.io/f/xgvwowjy"
+          method="POST"
+        >
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phonenum">Phone number:</label>
+          <textarea id="phonenum" name="phonenum"></textarea>
+
+          <label for="Caryear">Car Year:</label>
+          <textarea id="Caryear" name="Caryear" required></textarea>
+
+          <label for="Carmodel">Car Model:</label>
+          <textarea id="Carmodel" name="Carmodel" required></textarea>
+
+          <label for="interest">Service of Interest:</label>
+          <textarea
+            id="interest"
+            name="interest"
+            required
+            placeholder="Inpection? Pads & Rotors/Pads? Front and or Rear? "
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+      <h1 class="section__title">Pricing</h1>
+      <p class="section__subtitle">Affordable Rates for Quality Service</p>
+
+      <div class="pricing__plans">
+        <div class="pricing__plan">
+          <h2>Basic Inspection</h2>
+          <p class="pricing__price">$49.99</p>
+          <p class="pricing__details">
+            Includes a thorough inspection of your brake system. Cost is fully
+            waived if a repair is needed and performed.
+          </p>
+        </div>
+        <div class="pricing__plan">
+          <h2>Brake Repair (Pads and Rotors)</h2>
+          <p class="pricing__price">$99.99</p>
+          <p class="pricing__details">
+            Comprehensive brake pads & rotors service with full safety post
+            inspection. Post Brake bleed always included.
+          </p>
+        </div>
+        <div class="pricing__plan">
+          <h2>Brake Repair (Pads Only)</h2>
+          <p class="pricing__price">$84.99</p>
+          <p class="pricing__details">
+            Comprehensive brake pads repair service with full safety post
+            inspection. Post Brake bleed always included.
+          </p>
+          <p class="subscript">
+            *In some cases, the rotors may need to be replaced. If this is the
+            case we will inform you before proceeding.
+          </p>
+        </div>
+        <div class="pricing__plan">
+          <h2>Cost of Parts</h2>
+          <p class="pricing__price">More Info Needed</p>
+          <p class="pricing__details">
+            The cost of parts can vary significantly based on your vehicle's
+            make, model, and year. For an accurate quote on parts, please
+            contact us directly or request a quote. We'll provide you with a
+            detailed estimate tailored to your vehicle.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a
+        href="mailto:HansenMobileBrakes@gmail.com@gmail.com"
+        class="footer__link"
+        >HansenMobileBrakes@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://twitter.com/Sudo801"
+            target="_blank"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.yelp.com/"
+            target="_blank"
+          >
+            <i class="fab fa-yelp"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.facebook.com/"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/princing.js"></script>
+  </body>
+</html>

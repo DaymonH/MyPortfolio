@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hansen Mobile Brakes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/hansenMobileBreaks.css" />
+    <link rel="stylesheet" href="css/CtaAndForm.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="Home.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="Pricing.html" class="nav__link">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Mission Section -->
+    <section class="mission">
+      <div class="mission__overlay">
+        <h1 class="mission__title">Our Mission</h1>
+        <p class="mission__text">
+          At Hansen Mobile Brakes, our mission is to provide top-quality mobile
+          brake services with convenience and reliability, ensuring your safety
+          on the road.
+        </p>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Button -->
+    <div class="cta-container">
+      <button class="cta-button" onclick="openForm()">Request a Quote</button>
+    </div>
+
+    <!-- Popup Form -->
+    <div id="popup-form" class="popup-form">
+      <div class="popup-form__content">
+        <span class="popup-form__close" onclick="closeForm()">&times;</span>
+        <h2>Request a Quote</h2>
+        <form
+          id="quote-form"
+          action="https://formspree.io/f/xgvwowjy"
+          method="POST"
+        >
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phonenum">Phone number:</label>
+          <textarea id="phonenum" name="phonenum"></textarea>
+
+          <label for="Caryear">Car Year:</label>
+          <textarea id="Caryear" name="Caryear" required></textarea>
+
+          <label for="Carmodel">Car Model:</label>
+          <textarea id="Carmodel" name="Carmodel" required></textarea>
+
+          <label for="interest">Service of Interest:</label>
+          <textarea
+            id="interest"
+            name="interest"
+            required
+            placeholder="Inpection? Pads & Rotors/Pads? Front and or Rear? "
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- Services Section -->
+    <section class="services">
+      <h2 class="section__title">Our Services</h2>
+      <p class="section__subtitle">
+        We offer a range of mobile brake services to meet your needs:
+      </p>
+      <div class="services-container">
+        <div class="service">
+          <h3>Brake Inspection</h3>
+          <p>
+            Thorough inspections to ensure your brakes are in optimal condition.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Brake Repair</h3>
+          <p>
+            Expert repairs to keep your braking system functioning properly.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Brake Replacement</h3>
+          <p>
+            High-quality brake replacements to ensure maximum safety and
+            performance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+      <a href="https://www.yelp.com" class="yelp__link" target="_blank">
+        <i class="fab fa-yelp"></i> Hansen Mobile Brakes on Yelp
+      </a>
+      <div class="review">
+        <div class="review__card">
+          <img
+            src="pics/YelpLogoPNG.jfif"
+            alt="Yelp logo"
+            class="review__logo"
+          />
+          <p class="review__text">
+            "Hansen Mobile Brakes provided exceptional service! They were quick,
+            efficient, and very professional."
+          </p>
+          <p class="review__author">- Matt Jamison</p>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review__card">
+          <img
+            src="pics/YelpLogoPNG.jfif"
+            alt="Yelp logo"
+            class="review__logo"
+          />
+          <p class="review__text">
+            "I highly recommend Hansen Mobile Brakes. They made getting my
+            brakes fixed so convenient and easy."
+          </p>
+          <p class="review__author">- Cherise Newbold</p>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review__card">
+          <img
+            src="pics/YelpLogoPNG.jfif"
+            alt="Yelp logo"
+            class="review__logo"
+          />
+          <p class="review__text">
+            "Top-notch service and great prices. I'll definitely use them
+            again!"
+          </p>
+          <p class="review__author">- Elton Pham</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:HansenMobileBrakes@gmail.com" class="footer__link"
+        >HansenMobileBrakes@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.facebook.com/YOUR_FACEBOOK_USERNAME"
+            target="_blank"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://twitter.com/Sudo801"
+            target="_blank"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/princing.js"></script>
+  </body>
+</html>
