@@ -44,7 +44,7 @@ body {
 /* Mission Section */
 .mission {
   position: relative;
-  background: url("../pics/CloseUpPadRotor.jpg") no-repeat center center/cover;
+  background: url("../pics/side-view-repair.jpg") no-repeat center center/cover;
   height: 70vh;
   display: flex;
   align-items: center;

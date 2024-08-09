@@ -63,21 +63,3 @@ p {
 
 /* Call to Action Button */
 /* Container for CTA Button */
-/* Container for CTA Button */
-.cta-container {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: auto; /* Adjust height based on content */
-  width: 100vw; /* Full viewport width */
-  position: sticky; /* Sticky position */
-  top: 0; /* Stick to the top of the page */
-  left: 0;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Optional: semi-transparent background */
-  z-index: 1000; /* Ensure it is on top of other content */
-}
