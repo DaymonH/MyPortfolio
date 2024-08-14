@@ -18,11 +18,10 @@
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/Home.css" />
     <link rel="stylesheet" href="css/NavBar.css" />
     <link rel="stylesheet" href="css/GobalStyles.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/CtaAndForm.css" />
+    <link rel="stylesheet" href="css/Contact.css" />
   </head>
   <body>
     <header id="cs-navigation">
@@ -52,7 +51,7 @@
           <div class="cs-ul-wrapper">
             <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
               <li class="cs-li">
-                <a href="" class="cs-li-link cs-active"> Home </a>
+                <a href="Home.html" class="cs-li-link cs-active"> Home </a>
               </li>
               <li class="cs-li">
                 <a href="" class="cs-li-link"> About </a>
@@ -66,141 +65,24 @@
             </ul>
           </div>
         </nav>
-        <a href="Contact.html" class="cs-button-solid cs-nav-button"
-          >Contact Us</a
-        >
+        <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
       </div>
     </header>
 
-    <!-- Mission Section -->
-    <section class="mission">
-      <div class="mission__overlay">
-        <h1 class="mission__title">Our Mission</h1>
-        <p class="mission__text">
-          At Hansen Mobile Brakes, our mission is to provide top-quality mobile
-          brake services with convenience and reliability, ensuring your safety
-          on the road.
+    <!-- Contact Us Section -->
+    <section id="contact-us-section">
+      <div class="cs-container">
+        <h1 class="cs-heading">Get ahold of us</h1>
+        <p class="cs-text">
+          Call to schedule an appointment, get a quote or for any questions you
+          may have.
         </p>
-      </div>
-    </section>
-
-    <!-- Call-to-Action Button -->
-    <div class="cta-container">
-      <button class="cta-button" onclick="openForm()">Request a Quote</button>
-    </div>
-
-    <!-- Popup Form -->
-    <div id="popup-form" class="popup-form">
-      <div class="popup-form__content">
-        <span class="popup-form__close" onclick="closeForm()">&times;</span>
-        <h2>Request a Quote</h2>
-        <form
-          id="quote-form"
-          action="https://formspree.io/f/xgvwowjy"
-          method="POST"
-        >
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="phonenum">Phone number:</label>
-          <textarea id="phonenum" name="phonenum"></textarea>
-
-          <label for="Caryear">Car Year:</label>
-          <textarea id="Caryear" name="Caryear" required></textarea>
-
-          <label for="Carmodel">Car Model:</label>
-          <textarea id="Carmodel" name="Carmodel" required></textarea>
-
-          <label for="interest">Service of Interest:</label>
-          <textarea
-            id="interest"
-            name="interest"
-            required
-            placeholder="Inpection? Pads & Rotors/Pads? Front/Rear?... "
-          ></textarea>
-
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </div>
-    <!-- Services Section -->
-    <section class="services">
-      <h2 class="section__title">Our Services</h2>
-      <p class="section__subtitle">
-        We offer a range of mobile brake services to meet your needs:
-      </p>
-      <div class="services-container">
-        <div class="service">
-          <h3>Brake Inspection</h3>
-          <p>
-            Thorough inspections to ensure your brakes are in optimal condition.
-          </p>
-        </div>
-        <div class="service">
-          <h3>Brake Repair</h3>
-          <p>
-            Expert repairs to keep your braking system functioning properly.
-          </p>
-        </div>
-        <div class="service">
-          <h3>Brake Replacement</h3>
-          <p>
-            High-quality brake replacements to ensure maximum safety and
-            performance.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews Section -->
-    <section class="reviews">
-      <a href="https://www.yelp.com" class="yelp__link" target="_blank">
-        <i class="fab fa-yelp"></i> Hansen Mobile Brakes on Yelp
-      </a>
-      <div class="review">
-        <div class="review__card">
-          <img
-            src="pics/YelpLogoPNG.jfif"
-            alt="Yelp logo"
-            class="review__logo"
-          />
-          <p class="review__text">
-            "Daymon came to our place in Herriman and replaced all four brakes
-            and rotors. He did a phenomenal job! "
-          </p>
-          <p class="review__author">- Austin Cameron</p>
-        </div>
-      </div>
-      <div class="review">
-        <div class="review__card">
-          <img
-            src="pics/YelpLogoPNG.jfif"
-            alt="Yelp logo"
-            class="review__logo"
-          />
-          <p class="review__text">
-            "I highly recommend Hansen Mobile Brakes. They made getting my
-            brakes fixed so convenient and easy."
-          </p>
-          <p class="review__author">- Cherise Newbold</p>
-        </div>
-      </div>
-      <div class="review">
-        <div class="review__card">
-          <img
-            src="pics/YelpLogoPNG.jfif"
-            alt="Yelp logo"
-            class="review__logo"
-          />
-          <p class="review__text">
-            "Top-notch service and great prices. I'll definitely use them
-            again!"
-          </p>
-          <p class="review__author">- Elton Pham</p>
-        </div>
+        <p class="cs-contact">
+          <a href="tel:+18019462590" class="cs-link">+1 801-946-2590</a><br />
+          <a href="mailto:HansenMobileBrakes@gmail.com" class="cs-link"
+            >HansenMobileBrakes@gmail.com</a
+          >
+        </p>
       </div>
     </section>
 

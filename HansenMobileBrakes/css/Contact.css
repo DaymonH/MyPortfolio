@@ -1,0 +1,56 @@
+/* Contact Us Section Styling */
+#contact-us-section {
+  padding: var(--sectionPadding);
+  background-color: var(
+    --headerColor
+  ); /* Dark background matching header color */
+  text-align: center;
+  color: var(--bodyTextColorWhite); /* Light color for text */
+}
+
+#contact-us-section .cs-container {
+  max-width: 80rem;
+  margin: auto;
+  padding: 2rem;
+  background-color: var(
+    --bodyTextColor
+  ); /* Light background for the container */
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-us-section .cs-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--bodyTextColorWhite); /* Light color for heading */
+  margin-bottom: 1rem;
+}
+
+#contact-us-section .cs-text {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin-bottom: 2rem;
+  color: var(--bodyTextColorWhite); /* Primary light color for text */
+}
+
+#contact-us-section .cs-contact {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: var(--bodyTextColorWhite); /* Light color for contact text */
+  margin: 0; /* Remove default margin to center align properly */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#contact-us-section .cs-contact .cs-link {
+  color: var(--bodyTextColorWhite); /* Light color for links */
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 0.5rem 1rem; /* Padding to create space inside the oval */
+  border-radius: 2rem; /* Creates the oval shape */
+  background-color: var(--primary); /* Background color of the oval */
+  display: inline-block; /* Ensure the background and padding work */
+  margin: 0.5rem 0; /* Vertical spacing between links */
+}
