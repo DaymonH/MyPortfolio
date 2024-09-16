@@ -46,21 +46,28 @@
     z-index: 1;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
+    border-radius: 2.5rem;
+    overflow: hidden;
   }
+
   #pricing-1183 .cs-button-solid:before {
     content: "";
     position: absolute;
-    height: 100%;
-    width: 0%;
+    height: 0;
+    width: 0;
     background: #000;
     opacity: 1;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     z-index: -1;
-    transition: width 0.3s;
+    transition: width 0.3s ease, height 0.3s ease;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
   }
+
   #pricing-1183 .cs-button-solid:hover:before {
-    width: 100%;
+    width: 200%;
+    height: 200%;
   }
   #pricing-1183 .cs-card-group {
     width: 100%;

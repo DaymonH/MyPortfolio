@@ -1,0 +1,57 @@
+/* AboutMe.css */
+
+/* General Styling for the About Me Section */
+#about-me {
+  padding: 60px 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#about-me .cs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#about-me .cs-heading {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  text-align: center;
+  color: #003366; /* Matches the theme color */
+  margin-bottom: 30px;
+}
+
+#about-me .cs-text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#about-me .cs-text:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  #about-me .cs-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  #about-me .cs-container {
+    padding: 0 40px;
+  }
+
+  #about-me .cs-heading {
+    font-size: 42px;
+  }
+
+  #about-me .cs-text {
+    font-size: 20px;
+  }
+}

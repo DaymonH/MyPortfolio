@@ -1,157 +1,196 @@
-/* Normalize.css styles already included */
-/* Font Awesome and Google Fonts styles already included */
-/* Normalize.css and external libraries are already included */
-
-/* Global Styles */
-body {
-  font-family: "Source Sans Pro", sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #f4f4f4;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Mission Section --------------------------------------------------------------------------*/
-.mission {
+/* Hero Section */
+.hero {
   position: relative;
-  background: url("../pics/side-view-repair.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../pics/side-view-repair.jpg") no-repeat center center/cover;
   height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.mission__overlay {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.75
-  ); /* Increased opacity for a darker overlay */
-  padding: 2rem;
+
+.hero-content {
   color: white;
+  max-width: 800px;
+  padding: 2rem;
 }
 
-/* Services Section -------------------------------------------------------------------------*/
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--primary);
+
+  color: black;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #c0392b;
+}
+
+/* Services Section */
 .services {
+  padding: 4rem 0;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services-grid {
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin-left: 20%; /* Push content to start at 1/3 from the left */
-  width: 66.67%; /* Ensure the container doesn’t exceed the remaining width */
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.services-container {
-  display: flex; /* Align children in a row */
-  gap: 1rem; /* Space between cards */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  width: 100%;
-}
-.service {
-  background-color: #f0f0f0; /* Light gray background for cards */
+
+.service-card {
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  flex: 1; /* Make the cards flexible */
-  max-width: calc(
-    33.33% - 1rem
-  ); /* Ensure cards are 1/3 width of container minus gap */
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
-}
-.service h3 {
-  margin-top: 0; /* Remove top margin from headings */
-}
-.service p {
-  margin: 0; /* Remove default margin from paragraphs */
+  padding: 2rem;
+  flex: 1;
+  min-width: 250px;
+  max-width: calc(33.33% - 2rem);
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-/* Reviews Section -------------------------------------------------------------------------------*/
-.reviews {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-  background-color: #f5f5f5; /* Different color from the main page background */
-  margin: 1rem 0;
+.service-card:hover {
+  transform: translateY(-5px);
 }
-.reviews .section__title {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-.review {
-  display: flex;
-  justify-content: center;
+
+.service-card i {
+  font-size: 3rem;
+  color: var(--primary-color);
   margin-bottom: 1rem;
-  width: 80%;
 }
-.review__card {
-  background-color: #fff; /* Background color of the card */
-  border: 1px solid #ddd;
+
+.service-card h3 {
+  margin-top: 0;
+}
+
+.service-card p {
+  margin: 0;
+}
+
+/* Reviews Section */
+.reviews {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.reviews h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.review-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+
+.review-card {
+  flex: 0 0 300px;
+  background-color: var(--light-gray);
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
-  width: 90%;
-  max-width: 600px;
-  position: relative;
+  scroll-snap-align: start;
 }
-.review__logo {
-  width: 40px; /* Size of the Yelp logo */
-  height: auto;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+
+.review-card .stars {
+  color: #f1c40f;
+  margin-bottom: 1rem;
 }
-.review__text {
+
+.review-card p {
   font-size: 1rem;
   margin: 0 0 0.5rem;
-  padding-left: 60px; /* Ensure text does not overlap with the logo */
 }
-.review__author {
+
+.review-card p strong {
   font-size: 0.875rem;
   font-style: italic;
   color: #555;
+  display: block;
   text-align: right;
 }
 
-/* Yelp--------------------------------------------------------------------------- */
-.yelp {
-  padding: 2rem;
-  background-color: #fff;
-  margin: 1rem 0;
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 2rem 0;
 }
-.yelp__link {
+
+.footer-content {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  align-self: center;
-  font-size: 1.25rem;
-  text-decoration: none;
-  color: #d32323;
 }
 
-.yelp__link i {
-  margin-right: 0.5rem;
-}
-
-/* Footer -------------------------------------------------------------------------*/
-.footer {
-  background-color: #333;
-  padding: 1rem;
-  text-align: center;
-}
-.footer__link {
-  color: #fff;
-  text-decoration: none;
-}
-.social-list {
-  list-style: none;
+.social-links {
   display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 1rem 0 0;
 }
-.social-list__item {
-  margin: 0 0.5rem;
-}
-.social-list__link {
-  color: #fff;
+
+.social-links a {
+  color: white;
   font-size: 1.5rem;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .service-card {
+    max-width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-links {
+    margin-top: 1rem;
+    justify-content: center;
+  }
 }

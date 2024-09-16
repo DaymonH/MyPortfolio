@@ -4,25 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hansen Mobile Brakes</title>
+    <link rel="icon" href="/pics/NavLogo1.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/Home.css" />
     <link rel="stylesheet" href="css/NavBar.css" />
-    <link rel="stylesheet" href="css/GobalStyles.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/CtaAndForm.css" />
+    <link rel="stylesheet" href="css/GobalStyles.css" />
   </head>
   <body>
     <header id="cs-navigation">
@@ -52,42 +51,34 @@
           <div class="cs-ul-wrapper">
             <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
               <li class="cs-li">
-                <a href="" class="cs-li-link cs-active"> Home </a>
+                <a href="Home.html" class="cs-li-link cs-active"> Home </a>
               </li>
               <li class="cs-li">
-                <a href="" class="cs-li-link"> About </a>
+                <a href="About.html" class="cs-li-link"> About </a>
               </li>
-              <li class="cs-li">
-                <a href="" class="cs-li-link"> Services </a>
-              </li>
+
               <li class="cs-li">
                 <a href="Pricing.html" class="cs-li-link"> Pricing </a>
               </li>
             </ul>
           </div>
         </nav>
-        <a href="Contact.html" class="cs-button-solid cs-nav-button"
-          >Contact Us</a
-        >
+        <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
       </div>
     </header>
 
-    <!-- Mission Section -->
-    <section class="mission">
-      <div class="mission__overlay">
-        <h1 class="mission__title">Our Mission</h1>
-        <p class="mission__text">
-          At Hansen Mobile Brakes, our mission is to provide top-quality mobile
-          brake services with convenience and reliability, ensuring your safety
-          on the road.
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Expert Mobile Brake Services</h1>
+        <p>
+          We bring top-quality brake repairs and replacements directly to you,
+          ensuring your safety on the road.
         </p>
+        <button class="cta-button" onclick="openForm()">
+          Book or Get Estimate
+        </button>
       </div>
     </section>
-
-    <!-- Call-to-Action Button -->
-    <div class="cta-container">
-      <button class="cta-button" onclick="openForm()">Request a Quote</button>
-    </div>
 
     <!-- Popup Form -->
     <div id="popup-form" class="popup-form">
@@ -108,98 +99,109 @@
           <label for="phonenum">Phone number:</label>
           <textarea id="phonenum" name="phonenum"></textarea>
 
-          <label for="Caryear">Car Year:</label>
-          <textarea id="Caryear" name="Caryear" required></textarea>
-
-          <label for="Carmodel">Car Model:</label>
+          <label for="Carmodel">Car Make & Model:</label>
           <textarea id="Carmodel" name="Carmodel" required></textarea>
+
+          <label for="Caryear">Year of Vehicle:</label>
+          <textarea id="Caryear" name="Caryear" required></textarea>
 
           <label for="interest">Service of Interest:</label>
           <textarea
             id="interest"
             name="interest"
             required
-            placeholder="Inpection? Pads & Rotors/Pads? Front/Rear?... "
+            placeholder="Inpection? Pads & Rotors/Pads? Front and or Rear? "
           ></textarea>
+
+          <label for="Date"
+            >Preferred date of service: <br />
+            Weekdays 4pm-8pm and Weekends 8am to 4pm</label
+          >
+          <input type="date" id="Date" name="Date" />
 
           <button type="submit">Submit</button>
         </form>
       </div>
     </div>
-    <!-- Services Section -->
+
     <section class="services">
-      <h2 class="section__title">Our Services</h2>
-      <p class="section__subtitle">
-        We offer a range of mobile brake services to meet your needs:
-      </p>
-      <div class="services-container">
-        <div class="service">
-          <h3>Brake Inspection</h3>
-          <p>
-            Thorough inspections to ensure your brakes are in optimal condition.
-          </p>
-        </div>
-        <div class="service">
-          <h3>Brake Repair</h3>
-          <p>
-            Expert repairs to keep your braking system functioning properly.
-          </p>
-        </div>
-        <div class="service">
-          <h3>Brake Replacement</h3>
-          <p>
-            High-quality brake replacements to ensure maximum safety and
-            performance.
-          </p>
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-search"></i>
+            <h3>Brake Inspection</h3>
+            <p>
+              Thorough inspections to ensure your brakes are in optimal
+              condition.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-wrench"></i>
+            <h3>Brake Repair</h3>
+            <p>
+              High-quality brake repair/replacements to ensure maximum safety
+              and performance.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-cogs"></i>
+            <h3>General Automotive Repair</h3>
+            <p>
+              Additional services to keep your vehicle running smooth and
+              reliably.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Reviews Section -->
     <section class="reviews">
-      <a href="https://www.yelp.com" class="yelp__link" target="_blank">
-        <i class="fab fa-yelp"></i> Hansen Mobile Brakes on Yelp
-      </a>
-      <div class="review">
-        <div class="review__card">
-          <img
-            src="pics/YelpLogoPNG.jfif"
-            alt="Yelp logo"
-            class="review__logo"
-          />
-          <p class="review__text">
-            "Daymon came to our place in Herriman and replaced all four brakes
-            and rotors. He did a phenomenal job! "
-          </p>
-          <p class="review__author">- Austin Cameron</p>
-        </div>
-      </div>
-      <div class="review">
-        <div class="review__card">
-          <img
-            src="pics/YelpLogoPNG.jfif"
-            alt="Yelp logo"
-            class="review__logo"
-          />
-          <p class="review__text">
-            "I highly recommend Hansen Mobile Brakes. They made getting my
-            brakes fixed so convenient and easy."
-          </p>
-          <p class="review__author">- Cherise Newbold</p>
-        </div>
-      </div>
-      <div class="review">
-        <div class="review__card">
-          <img
-            src="pics/YelpLogoPNG.jfif"
-            alt="Yelp logo"
-            class="review__logo"
-          />
-          <p class="review__text">
-            "Top-notch service and great prices. I'll definitely use them
-            again!"
-          </p>
-          <p class="review__author">- Elton Pham</p>
+      <div class="container">
+        <h2>Customer Reviews</h2>
+        <div class="review-carousel">
+          <div class="review-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "Daymon came to our place in Herriman and replaced all four brakes
+              and rotors. He did a phenomenal job!"
+            </p>
+            <p><strong>- Austin Cameron</strong></p>
+          </div>
+          <div class="review-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "I highly recommend Hansen Mobile Brakes. They made getting my
+              brakes fixed so convenient and easy."
+            </p>
+            <p><strong>- Cherise Newbold</strong></p>
+          </div>
+          <div class="review-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "Top-notch service and great prices. I'll definitely use them
+              again!"
+            </p>
+            <p><strong>- Elton Pham</strong></p>
+          </div>
         </div>
       </div>
     </section>
@@ -319,8 +321,6 @@
         </div>
       </div>
     </footer>
-
     <script src="js/princing.js"></script>
-    <script src="js/Home.js"></script>
   </body>
 </html>

@@ -1,9 +1,7 @@
 /* Contact Us Section Styling */
 #contact-us-section {
   padding: var(--sectionPadding);
-  background-color: var(
-    --headerColor
-  ); /* Dark background matching header color */
+  background-color: #f4f4f4;
   text-align: center;
   color: var(--bodyTextColorWhite); /* Light color for text */
 }
