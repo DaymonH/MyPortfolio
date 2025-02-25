@@ -2,11 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
-import { useTheme } from "@/app/layout"; // Use the custom useTheme hook
-
 export default function Header() {
   
-  const { toggleTheme } = useTheme();
   return (
     <div className="w-full">
       <header
@@ -80,7 +77,7 @@ export default function Header() {
         {/* Theme toggle and Resume button */}
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
-            <Switch onCheckedChange={toggleTheme} />
+            <Switch/>
           </div>
 
           <Button
