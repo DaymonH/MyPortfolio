@@ -1,11 +1,11 @@
-import React from "react";
-import Image, {StaticImageData} from "next/image";
 import { Card } from "@/components/ui/card"; // Adjust the import path based on your project structure
+import Image, { StaticImageData } from "next/image";
+import React from "react";
 // import { calculateDurationInMonths } from "@/lib/dateUtils"; // Adjust the import path based on your project structure
-import uvuLogo from "../../assets/uvu.png"; // Import the logo image
-import rhoneLogo from "../../assets/rhone-nb.png"; // Import the logo image
-import i3scLogo from "../../assets/i3sc-nb.png"; // Import the logo image
 import elLogo from "../../assets/EL.png"; // Import the logo image
+import i3scLogo from "../../assets/i3sc-nb.png"; // Import the logo image
+import rhoneLogo from "../../assets/rhone-nb.png"; // Import the logo image
+import uvuLogo from "../../assets/uvu.png"; // Import the logo image
 
 interface ExperienceCardProps {
   company: string;
@@ -68,7 +68,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
                       alt={`${company} logo`}
                       width={32}
                       height={32}
-                      objectFit="contain"
+                      style={{ objectFit: "contain" }}
                     />
                   ) : (
                     <span className="text-gray-400">🌟</span>
@@ -194,6 +194,3 @@ const ExperienceTimeline = () => {
 };
 
 export default ExperienceTimeline;
-
-
-
