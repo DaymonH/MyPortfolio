@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-const HanseMobileBrakesHome = () => {
+const HanseMobileBrakes = () => {
   const router = useRouter();
 
   useEffect(() => {
@@ -27,4 +27,4 @@ const HanseMobileBrakesHome = () => {
   );
 };
 
-export default HanseMobileBrakesHome;
+export default HanseMobileBrakes;
